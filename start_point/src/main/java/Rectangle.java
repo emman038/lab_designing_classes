@@ -9,16 +9,11 @@ public class Rectangle {
     }
 
     public int area(){
-        int rectangleArea = this.length * this.width;
-        return rectangleArea;
+        return this.length * this.width;
     }
 
     public boolean square(){
-        if (this.length == this.width){
-            return true;
-        } else{
-            return false;
-        }
+        return this.length == this.width;
     }
 
 

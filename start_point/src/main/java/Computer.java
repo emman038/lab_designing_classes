@@ -2,8 +2,6 @@ public class Computer {
     private int storage;
     private String printerModel;
 
-    private int addStorageSpace;
-
     public Computer(int inputStorage, String printerModel){
         this.storage = inputStorage;
         this.printerModel = printerModel;
@@ -13,9 +11,8 @@ public class Computer {
         return this.storage;
     }
 
-    public void addStorage(int inputStorage){
-        this.addStorageSpace = inputStorage;
-        this.storage += this.addStorageSpace;
+    public void addStorage(int extraStorage){
+        this.storage += extraStorage;
     }
 
     public void setPrinterModel(String newPrinterModel){
